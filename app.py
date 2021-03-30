@@ -46,7 +46,7 @@ def index():
     user = User.query.first() # 读取用户记录
     movies = Movie.query.all() # 读取所有电影记录
     return render_template('index.html', user=user, movies=movies)
-
+ 
 @app.route('/test')
 def test_url_for():
     # 下面是一些调用示例（请在命令行窗口查看输出的 URL）：
